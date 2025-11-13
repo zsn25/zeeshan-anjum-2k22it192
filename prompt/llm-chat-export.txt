@@ -1,0 +1,76 @@
+Boostly is a system made for college students to appreciate and reward each other.
+It’s like a mini social platform where students can send credits to their friends for doing something good, get recognized by others, and later redeem those credits for real rewards.
+Built with:
+Node.js and Express.js for the backend
+MongoDB and Mongoose for the database
+ Main Features (What the System Does)
+ Recognition System
+Students can send credits to their friends to say “thank you” or “well done.”
+Rules:
+Everyone gets 100 credits every month.
+You can’t send credits to yourself.
+
+You can’t send more than what you currently have.
+
+You can’t send more than 100 credits total in one month.
+
+Every new month, your credits and sending limit reset automatically.
+
+2.Endorsement System
+
+Other students can endorse (like or cheer for) a recognition post someone else received.
+
+Rules:
+
+One person can endorse a recognition only once.
+
+Endorsements don’t cost credits — they just show support.
+
+They count toward leaderboard ranking.
+
+3. Redemption System
+
+Students can redeem their earned credits for real rewards or vouchers.
+
+Rules:
+
+1 credit = ₹5
+
+When redeemed, the credits are permanently used.
+
+Only received credits can be redeemed, not the ones you send.
+
+4. 🗓 Monthly Credit Reset
+
+Every month, the system automatically resets credits.
+
+Rules:
+
+Each student gets 100 new credits.
+
+You can carry forward up to 50 unused credits.
+
+Sending limit also resets to 100 every month.
+
+5.Leaderboard
+
+A list that shows top-performing students based on total credits they’ve received.
+
+Rules:
+
+Sorted by total credits (highest first).
+
+If two students have the same credits, the one with the smaller student ID comes first.
+
+Also shows how many recognitions and endorsements they got.
+
+You can choose how many top students to show (like top 10, top 50, etc.).
+
+
+Checks all input (no missing or wrong data).
+
+Blocks invalid transfers or redemptions.
+
+Prevents duplicate endorsements.
+
+Sanitizes inputs to avoid security issues.
